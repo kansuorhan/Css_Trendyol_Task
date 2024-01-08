@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-*{
-    margin: 5px;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
+  }
 
 
 header{
@@ -16,6 +16,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 99;
+    margin:  0 50px 0 50px;
 }
 
 header img{
@@ -69,6 +70,7 @@ header .search-box i{
     display: flex;
     justify-content: space-around;
     padding: 5px;
+    margin:  0 50px 0 50px;
 }
 
 .categories li{
@@ -98,6 +100,7 @@ header .search-box i{
     align-items: center;
     gap: 10px;
     padding: 20px;
+    margin:  0 100px 0 100px;
 }
 
 .brands img{
@@ -148,9 +151,13 @@ header .search-box i{
 .cards,.cards-advantage{
     background-color: antiquewhite;
     height: 480px;
-    margin: 10px 20px 40px;
     padding: 10px;
     border-radius: 10px;
+    margin:  0 150px 40px 150px;
+}
+
+.container:hover,.container-advantage:hover{
+    cursor: pointer;
 }
 
 h2{
@@ -168,6 +175,7 @@ h2{
     border-width: 5px;
     border-radius: 10px;
     max-width: 200px;
+    margin: 0 5px;
 }
 
 .card img,.card-advantage img{
@@ -191,10 +199,10 @@ h2{
 }
 
 .tags{
-
     grid-template-columns: repeat(3,1fr);
     display: grid;
     place-items: center;
+    margin: 0 150px 0 150px;
 }
 
 
@@ -205,6 +213,7 @@ h2{
     padding: 0;
     border-radius: 10px;
     margin-bottom: 30px;
+
 }
 
 .advirtesement img{
@@ -223,20 +232,95 @@ h2{
     text-decoration: none;
 }
 
-.company-item{
+.click-item .company-item{
     color: white;
+    margin-left: 5px;
+    margin-right: 50px;
 }
 
-.cart-item{
+.click-item .cart-item{
     color:black;
-    justify-content: end;
-    align-items: flex-end;
+    
 }
 
 .advirtesement:hover,.cart-item:hover{
     background-color: #F68429;
     color: white;
     transition: .3s;
+}
+
+h3,h4{
+    font-family: sans-serif;
+    margin: 5px 150px 10px 150px;
+    padding-left: 10px;
+}
+
+.information p{
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0 150px 0 150px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 270px;
+}
+
+.foot-title{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.foot-list{
+    padding: 20px;
+    background-color: black;
+}
+
+.foot-list ul i{
+    list-style-type: none;
+}
+
+.foot-img img{
+    height: 150px;
+    width: 290px;
+}
+
+.foot-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: black;
+
+}
+
+
+.foot-icons i:nth-child(1){
+    color: blue;
+}
+
+.foot-icons i:nth-child(2){
+    color: aqua;
+}
+
+.foot-icons i:nth-child(3){
+    color: purple;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.copyright-info{
+    display: flex;
+    gap: 30px;
+    color: white;
 }
 
 @media(max-width: 768px) {
