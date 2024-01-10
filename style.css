@@ -152,6 +152,7 @@ header .search-box i{
 
 .cards,.cards-advantage{
     background-color: antiquewhite;
+    overflow: auto;
     height: 480px;
     padding: 10px;
     border-radius: 10px;
